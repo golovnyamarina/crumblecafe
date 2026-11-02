@@ -1,0 +1,63 @@
+@import url('https://googleapis.com');
+
+body {
+    background-color: #faf5ef; 
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #4a3e3d;
+}
+
+h1 {
+    font-family: 'Comfortaa', cursive;
+    color: #5c3a21;
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+nav button, .nav-btn {
+    background-color: #ffffff;
+    color: #8c6239;
+    border: 2px solid #8c6239;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s ease; 
+}
+
+nav button:hover, .nav-btn:hover {
+    background-color: #8c6239;
+    color: #ffffff;
+    transform: translateY(-2px); 
+}
+
+nav button.active, .nav-btn.active {
+    background-color: #5c3a21;
+    color: #ffffff;
+    border-color: #5c3a21;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(10px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+.fade-in-tab {
+  animation: fadeIn 0.3s ease-in forwards;
+}
